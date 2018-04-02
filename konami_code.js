@@ -1,6 +1,6 @@
 const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
-const test = document.querySelector('input')
+const test = document.body
  
 test.addEventListener('keydown', function(e) {
   console.log(e.which)
