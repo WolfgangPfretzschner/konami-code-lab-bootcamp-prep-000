@@ -1,10 +1,5 @@
 const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
-const test = document.body
- 
-test.addEventListener('keydown', function(e) {
-  console.log(e.which)
-})
 
 
 function init() {
@@ -15,6 +10,7 @@ function init() {
   input.addEventListener('keydown', onKeyDownHandler)
   
   function onKeyDownHandler(e) {
+    console.log(e.which)
   const key = parseInt(e.detail || e.which);
  
   if (key === code[index]) {
