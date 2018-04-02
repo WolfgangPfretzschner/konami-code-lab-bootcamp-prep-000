@@ -10,19 +10,19 @@ function init() {
   input.addEventListener('keydown', onKeyDownHandler)
   
   function onKeyDownHandler(e) {
-  console.log(e.which);
-  const key = parseInt(e.detail || e.which);
- 
-  if (key === code[index]) {
-    index++;
- 
-    if (index === code.length) {
-      alert("Hurray!");
- 
+    console.log(e.which);
+    const key = parseInt(e.detail || e.which);
+   
+    if (key === code[index]) {
+      index++;
+   
+      if (index === code.length) {
+        alert("Hurray!");
+   
+        index = 0;
+      }
+    } else {
       index = 0;
     }
-  } else {
-    index = 0;
   }
-}
 }
