@@ -26,3 +26,4 @@ function init() {
     }
   }
 }
+init();
